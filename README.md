@@ -15,13 +15,11 @@ Changing the output is simple. In app.js, you can run:
 ```
 console.log(out({ val:16 })) 
 console.log(out({ val:20 })) 
-console.log(out({ val:24 })) 
-
+console.log(out({ val:24 }))
 ```
 
 or leave as default with no arguments
 
 ```
 console.log(out({}))
-
 ```
