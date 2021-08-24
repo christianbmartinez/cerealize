@@ -1,0 +1,12 @@
+{
+  "name": "cerealize",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "Christian B Martinez",
+  "license": "ISC",
+  "description": "A node js app for generating serial numbers"
+}
