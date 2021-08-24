@@ -41,15 +41,15 @@ sx = () => {
 
 // Generate the output
 out = (x) => {
-    if (!x.val) {        
-        return(`${c()}-${c()}-${c()}-${c()}`) // ( 8 x 4 ) 32 char / number default
-    } else if (x.val === 16) {        
+    if (x.val === 16) {        
         return(`${fr()}-${fr()}-${fr()}-${fr()}`) // ( 4 x 4 ) 16 digit serial number
     } else if (x.val === 20) {        
         return(`${fv()}-${fv()}-${fv()}-${fv()}`) // ( 5 x 4 ) 20 digit serial number
-    } else {
+    } else if (x.val === 24) {
         return(`${sx()}-${sx()}-${sx()}-${sx()}`) // (6 x 4) 24 digit serial number
-    } 
+    } else {
+        return(`${c()}-${c()}-${c()}-${c()}`) // ( 8 x 4 ) 32 char / number default
+    }
 }
 
 console.log(out({})) // Default XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX
